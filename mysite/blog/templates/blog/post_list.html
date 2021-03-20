@@ -1,0 +1,13 @@
+<html>
+<head>
+<body>
+	{%for post in posts%}
+		<article>
+			<h1>{{post.title}}</h1>
+			<p>{{post.text|linebreaksbr}}</p>
+			<time>created: {{post.created_date}}</time>
+		</article>
+	{%endfor%}
+</body>
+</head>
+</html>
